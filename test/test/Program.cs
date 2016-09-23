@@ -9,10 +9,9 @@ namespace test
     class Program
     {
 
-        static void Main(string[] args)
+        static void Main()
         {
-            int[][] field = new int[3][];
-            
+            int[][] field = new int[][] { new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } };
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -23,11 +22,6 @@ namespace test
                 }
                 Console.WriteLine();
             }
-        }
-
-        static int B(int a)
-        {
-            return a * a;
         }
     }
 }
